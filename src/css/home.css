@@ -1,0 +1,74 @@
+.ghc .gl-hr{
+    object-fit: cover;
+    width: 100vw;
+    max-width: 100%;
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    margin-top: -160px;
+}
+
+.ghc .glrw{
+    height: 100vh;
+}
+
+@media (max-width: 576px) {
+    .ghc .glrw {
+        height: auto;
+        padding-top: 173px;
+    }
+}
+
+.hecl{
+    width: 100%;
+    height: auto ;
+    margin-top:50px;
+}
+
+.glrc{
+    object-fit:cover;
+    width: 100%;
+    height: auto;   
+}
+
+/* Customize the carousel arrows on big screens*/
+.hecl .carousel-control-prev-icon,
+.hecl .carousel-control-next-icon {
+    background-color: #edd1d1;
+    width: 10%; 
+}
+.hecl .carousel-control-prev-icon{
+    margin-right: 150px;
+  
+  }
+  .hecl .carousel-control-next-icon {
+    margin-left: 150px; 
+  }
+  
+  .carousel-indicators li {
+    background-color: #edd1d1; /* Change the color to your desired color */
+  }
+  
+  .carousel-indicators .active {
+    background-color: #edd1d1; /* Change the color of the active indicator */
+  }
+
+
+  
+/* Customize the carousel arrows on small screens view */
+@media (max-width: 576px) {
+    .hecl .carousel-control-prev-icon,
+    .hecl .carousel-control-next-icon {
+      background-color: #edd1d1; /* Change the color to your desired color */
+      width: 30%;
+    }
+  
+    .hecl .carousel-control-prev-icon {
+      margin-right: 25px;
+    }
+  
+    .hecl .carousel-control-next-icon {
+      margin-left: 25px;
+    }
+  }
+  

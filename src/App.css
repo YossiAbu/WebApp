@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: #dacccc;
+    display: flex;
+    flex-direction: column;
+  }
+  
+.app {
+    flex: 1 0 auto;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+._access-menu {
+    width: 25vw !important; /* adjust as needed */
+    height: 50vh !important; /* adjust as needed */
+    overflow: auto !important;
+}
+
+._access-menu ul li button {
+    font-size: 16px !important; /* Adjust this value to your preference */
+}

@@ -1,0 +1,96 @@
+/* Images */
+.image-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+    
+.image-list-item {
+    width: 700px; /* Increase width for larger images */
+}
+    
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+    
+.image {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+    
+.checkbox {
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Position checkbox on the right side */
+    z-index: 1;
+}
+    /* Style the checkbox as desired */
+    /* input[type="checkbox"] { */
+    /* Add custom styles here */
+    /* }   */
+
+.rescl{
+    width: 90%;
+    height: auto ;
+    margin-top:20px;
+}
+
+.rescl .carousel-control-prev-icon,
+.rescl .carousel-control-next-icon {
+      background-color: #edd1d1; /* Change the color to your desired color */
+      width: 15%;
+    }
+  
+    .rescl .carousel-control-prev-icon {
+      margin-right: 50px;
+    }
+  
+    .rescl .carousel-control-next-icon {
+      margin-left: 50px;
+    }
+
+.glrsi{
+    object-fit: contain;
+    width: 100%;
+    height: 300px;  
+}
+
+
+@media (max-width: 576px){
+
+    .rescl{
+        width: 100%;
+        height: auto ;
+        margin-top:20px;
+    }
+
+    .image-list-item {
+        width: 100%; /* Increase width for larger images */
+    }
+
+    .rescl .carousel-control-prev-icon,
+    .rescl .carousel-control-next-icon {
+      background-color: #edd1d1; /* Change the color to your desired color */
+      width: 30%;
+    }
+  
+    .rescl .carousel-control-prev-icon {
+      margin-right: 40px;
+    }
+  
+    .rescl .carousel-control-next-icon {
+      margin-left: 40px;
+    }
+
+    .glrsi{
+        object-fit: contain;
+        width: 100%;
+        height: auto;  
+    }
+}
+      

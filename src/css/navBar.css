@@ -1,0 +1,172 @@
+.navbar-custom {
+    height: 70px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#dacccc 100%,#dacccc 100%);
+    /* background-color: #dacccc; */
+    position: sticky;
+    /* top: 100; */
+    z-index: 100
+}
+
+.navbar-custom.navbar-brand{
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+    padding: 0;
+    height: 100%;
+}
+    
+.logo-img{
+    /* padding-top: 20px; */
+    height: 70px;
+    width: 160px;
+}
+    
+@media (max-width: 767px) {
+  .navbar-custom {
+    height: 60px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0) 0%,#dacccc 100%,#dacccc 100%);
+    /* background-color: #dacccc; */
+    position: sticky;
+    top: 0;
+    z-index: 100
+}
+  .logo-img {
+    height: 50px;
+    width: 127px;
+    margin-left: auto;
+    display: block;
+  }
+
+  .navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    padding: 0;
+    height: 100%;  
+  }
+}
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 0.25rem 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-toggler-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  display: block;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-toggler-icon::before,
+.navbar-toggler-icon::after {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+  transition: transform 0.3s ease;
+}
+
+.navbar-toggler-icon::before {
+  top: -6px;
+}
+
+.navbar-toggler-icon::after {
+  bottom: -6px;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon::after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+  background-color: transparent;
+}
+    
+.collapsed-menu {
+    background-color: #dacccc;
+    color: #000000;  
+}
+.glml{
+    background-color: #dacccc;
+    color: #000000;
+}
+    
+.collapsed-menu .nav-link {
+      color: #000000;
+}
+    
+.collapsed-menu .nav-link:hover {
+      color: #000000;
+}
+    
+    .fade-in-animation {
+      animation-name: fade-in;
+      animation-duration: 0.4s;
+      animation-timing-function: ease;
+      animation-fill-mode: both;
+      transition: opacity 0.5s ease;
+    }
+
+    .fade-out-animation {
+        animation-name: fade-out;
+        animation-duration: 0.4s;
+        animation-timing-function: ease;
+        animation-fill-mode: both;
+        transition: opacity 0.5s ease;
+      }
+    
+    .delay-0 {
+      animation-delay: 0s;
+    }
+    
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+    
+    .delay-2 {
+      animation-delay: 0.2s;
+    }
+    
+    .delay-3 {
+      animation-delay: 0.3s;
+    }
+    
+    
+    @keyframes fade-in {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+
+    @keyframes fade-out {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+   
+
